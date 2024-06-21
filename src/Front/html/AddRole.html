@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="text">Напишите имя пользователя, которому хотите добавить роль</div>
+    <div class="window">
+        <form action="/src/Controller/AddRoleController.php" method="POST">
+            <div>
+                <label for="name">Имя пользователя:</label>
+                <input type="text" id="name" name="username" required>
+            </div>
+            <div>
+                <label for="role">Роль:</label>
+                <select id="role" name="role" required>
+                    <option value="role1">role1</option>
+                    <option value="role2">role2</option>
+                    <option value="role3">role3</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="button">Добавить</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

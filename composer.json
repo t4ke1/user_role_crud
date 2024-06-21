@@ -1,0 +1,11 @@
+{
+    "name": "evg/cin",
+    "description": "CRUD_web-app",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}

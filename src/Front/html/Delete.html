@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="text">Напишите имя пользователя которого хотите удалить</div>
+    <div class="window">
+        <form action="/src/Controller/DeleteController.php" method="POST">
+            <div>
+                <label for="name">Имя пользователя:</label>
+                <input type="text" id="name" name="username" required>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="button">Удалить</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create</title>
+    <link rel="stylesheet" href="/src/Front/css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="text">Напишите имя пользователя, которого хотите извменить</div>
+    <div class="window">
+        <form action="/src/Controller/ChangeNameController.php" method="POST">
+            <div>
+                <label for="name">Имя пользователя:</label>
+                <input type="text" id="name" name="username" required>
+            </div>
+            <div>
+                <label for="changeName">Новое имя пользователя:</label>
+                <input type="text" id="changeName" name="changeName" required>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="button">Переименовать</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="text">Напишите имя пользователя, роль которого хотите извменить</div>
+    <div class="window">
+        <form action="/src/Controller/ChangeRoleController.php" method="POST">
+            <div>
+                <label for="name">Имя пользователя:</label>
+                <input type="text" id="name" name="username" required>
+            </div>
+            <div>
+                <label for="currentRole">Старая роль:</label>
+                <select id="currentRole" name="currentRole" required>
+                    <option value="role1">role1</option>
+                    <option value="role2">role2</option>
+                    <option value="role3">role3</option>
+                </select>
+            </div>
+            <div>
+                <label for="changeRole">Изменить на:</label>
+                <select id="changeRole" name="changeRole" required>
+                    <option value="role1">role1</option>
+                    <option value="role2">role2</option>
+                    <option value="role3">role3</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="button">Изменить роль</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
